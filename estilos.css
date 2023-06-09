@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-band,
+.right-band {
+    flex: 1;
+}
+
+.left-band {
+    background-color: #81a2fb; /* Color de la banda lateral izquierda */
+}
+
+.right-band {
+    background-color: #81a2fb; /* Color de la banda lateral derecha */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 4; /* Anchura de la banda central */
+    position: relative; /* Agregamos posición relativa al contenedor */
+}
+
+.flourish-embed {
+    position: relative; /* Hacemos que el gráfico sea posicionado de forma relativa */
+    top: 0; /* Posicionamos el gráfico en la parte superior del contenedor */
+    left: 0; /* Posicionamos el gráfico en el inicio horizontal del contenedor */
+    width: 100%; /* Ajustamos el ancho del gráfico al 100% del contenedor */
+    height: auto; /* Mantenemos la altura automática para mantener la proporción */
+    z-index: -1; /* Enviamos el gráfico al fondo */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    background-color: #a4a4a4; /* Color de fondo del título */
+    padding: 10px 20px; /* Espaciado interno del título */
+    border-radius: 8px; /* Radio de borde del título */
+    position: relative; /* Agregamos posición relativa al título */
+    z-index: 1; /* Aseguramos que el título esté por encima del gráfico */
+}
